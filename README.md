@@ -8,6 +8,8 @@ The [Open/closed principle](https://en.wikipedia.org/wiki/Open%E2%80%93closed_pr
 The principle states "software entities (classes, modules, functions, etc.) should be open for extension, but closed for modification"
 Specifically in this example the extensible behaviour is separated (calculating the area of shapes) behind the interface as advised by Robert C. Martin.
 
+See the [commit history](https://github.com/federico-boncaldo/open-closed-principle-php/commits/master) to check the changes made to the code.
+
 ## Requirements
 
 PHP 5 >= 5.4, PHP 7
