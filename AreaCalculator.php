@@ -8,11 +8,7 @@ class AreaCalculator
         $area = [];
 
         foreach ($shapes as $shape) {
-            if ($shape instanceof Circle) {
-                $area[] = $shape->radius * $shape->radius * pi();
-            } elseif ($shape instanceof Square) {
-                $area[] = $shape->side * $shape->side;
-            }
+        	$area[] = $shape->area();
         }
 
         return array_sum($area);

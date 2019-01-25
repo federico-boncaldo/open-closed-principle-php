@@ -8,4 +8,10 @@ class Square
     {
         $this->side = $side;
     }
+
+    public function area()
+    {
+    	return $this->side * $this->side;
+    }
+
 }
