@@ -3,15 +3,19 @@
 class AreaCalculator
 {
 
-    public function calculate($squares)
+    public function calculate($shapes)
     {
-        $area = 0;
+        $area = [];
 
-        foreach ($squares as $square) {
-            $area += $square->side * $square->side;
+        foreach ($shapes as $shape) {
+            if ($shape instanceof Circle) {
+                $area[] = $shape->radius * $shape->radius * pi();
+            } elseif ($shape instanceof Square) {
+                $area[] = $shape->side * $shape->side;
+            }
         }
 
-        return $area;
+        return array_sum($area);
 
     }
 }
